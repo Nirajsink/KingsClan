@@ -148,3 +148,189 @@ p {
 .playlist ul li.active {
     background: #ff0050;
 }
+/* Cover Page Styles */
+.cover-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #0c0c0c, #1e1e1e);
+    color: #fff;
+}
+
+.logo-container {
+    margin-bottom: 30px;
+}
+
+.king-logo {
+    font-size: 120px;
+    color: gold;
+    margin-bottom: 20px;
+    animation: glow 2s infinite alternate;
+}
+
+.cover-container h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.cover-container p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #ccc;
+}
+  /* Updated Start Button Styles */
+  .start-button {
+      position: relative;
+      display: inline-block;
+      padding: 15px 60px;
+      background: transparent;
+      color: #fff;
+      font-size: 20px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      text-decoration: none;
+      overflow: hidden;
+      transition: 0.5s;
+      border: 2px solid #ff0050;
+      border-radius: 8px;
+  }
+
+  .start-button:hover {
+      background: #ff0050;
+      color: #fff;
+      box-shadow: 0 0 10px #ff0050, 0 0 40px #ff0050, 0 0 80px #ff0050;
+      transition-delay: 0.1s;
+  }
+
+  .start-button::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 0, 80, 0.4), transparent);
+      transition: 0.5s;
+  }
+
+  .start-button:hover::before {
+      left: 100%;
+      transition: 0.5s;
+      transition-delay: 0.1s;
+  }
+
+  /* Optional: Add a pulsing effect to make it more eye-catching */
+  @keyframes pulse {
+      0% {
+          transform: scale(1);
+      }
+      50% {
+          transform: scale(1.05);
+      }
+      100% {
+          transform: scale(1);
+      }
+  }
+    .start-button {
+        animation: pulse 2s infinite;
+    }
+
+    .start-button:hover {
+        animation: none;
+    }
+
+
+  /* Black Crown Logo Style */
+  .king-logo {
+      font-size: 120px;
+
+
+
+
+
+
+
+
+
+
+
+      color: #000;
+      text-shadow: 
+
+
+          0 1px 0 #444,
+          0 2px 0 #333,
+          0 3px 3px rgba(0, 0, 0, 0.3);
+      margin-bottom: 20px;
+
+
+      animation: dark-pulse 2s infinite alternate;
+  }
+
+
+
+  @keyframes dark-pulse {
+      from {
+
+          filter: drop-shadow(0 0 5px rgba(50, 50, 50, 0.7));
+      }
+      to {
+
+          filter: drop-shadow(0 0 10px rgba(100, 100, 100, 0.9));
+      }
+
+  }/* Media queries for cover page */
+@media (max-width: 768px) {
+    .king-logo {
+        font-size: 100px;
+    }
+    
+    .cover-container h1 {
+        font-size: 28px;
+    }
+    
+    .cover-container p {
+        font-size: 16px;
+    }
+    
+    .start-button {
+        padding: 12px 40px;
+        font-size: 18px;
+    }
+}
+
+/* If you want to use your own image instead of the icon */
+.king-logo-img {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+    animation: glow 2s infinite alternate;
+}
+/* Bigger crown for the player page */
+.king-logo-small {
+    font-size: 80px; /* Increased from 50px to 80px */
+    background: linear-gradient(
+        to bottom,
+        #f0f0f0 0%, 
+        #c0c0c0 40%,
+        #a0a0a0 60%,
+        #d8d8d8 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 
+        0 1px 1px rgba(0, 0, 0, 0.3),
+        0 2px 5px rgba(0, 0, 0, 0.2);
+    animation: silver-glow 2s infinite alternate;
+}
+
+.player-crown {
+    margin-bottom: 30px; /* Increased from 20px to 30px for better spacing */
+    text-align: center;
+}

@@ -8,54 +8,16 @@
     <script src="https://kit.fontawesome.com/fcabfa8547.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
-        <div class="music-player">
-            <nav>
-                <div class="circle"><i class="fa-solid fa-angle-left"></i></div>
-                <div class="circle"><i class="fa-solid fa-bars"></i></div>
-            </nav>
-
-            <img src="Media/Aawara_King,_Zaeden,KSHMR.webp" class="song-img" alt="">
-            <h1 class="song-name">Aawara</h1>
-            <p class="artist-name">King, Zaeden, KSHMR</p>
-
-            <audio id="song">
-                <source src="Media/Aawara - (Raag.Fm).mp3" type="audio/mp3">
-            </audio>
-
-            <input type="range" value="0" id="progress">
-
-            <div class="controls">
-                <div onclick="prevSong()"><i class="fa-solid fa-backward"></i></div>
-                <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
-                <div onclick="nextSong()"><i class="fa-solid fa-forward"></i></div>
-            </div>
-
-            <div class="volume-control">
-                <i class="fa-solid fa-volume-up"></i>
-                <input type="range" value="100" id="volume" min="0" max="100">
-            </div>
+    <div class="cover-container">
+        <div class="logo-container">
+            <i class="fa-solid fa-crown king-logo"></i>
         </div>
-
-        <!-- Playlist Section -->
-        <div class="playlist">
-            <h2>Playlist</h2>
-            <ul id="song-list">
-                <li onclick="playSong(0)">Aawara - King, Zaeden, KSHMR</li>
-                <li onclick="playSong(1)">Sarkaare - King</li>
-                <li onclick="playSong(2)">Stay - King</li>
-                <li onclick="playSong(3)">Still The Same - King</li>
-                <li onclick="playSong(4)">Tu Jaana Na - King</li>
-                <li onclick="playSong(5)">Dhoonde Sitaare - King, Astha Gill</li>
-                <li onclick="playSong(6)">Tu Aake Dekhle - King</li>
-                <li onclick="playSong(7)">Dracula - King</li>
-                <li onclick="playSong(8)">Ilzaam - King</li>
-                <li onclick="playSong(9)">Way Bigger - King</li>
-                <li onclick="playSong(10)">She Don't Give a - King</li>
-            </ul>
-        </div>
+        <h1>KINGSCLAN</h1>
+        
+        <!-- Replace text button with a play symbol button -->
+        <a href="player.html" class="start-button">
+            <i class="fa-solid fa-play"></i>
+        </a>
     </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
